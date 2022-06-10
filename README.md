@@ -1,7 +1,12 @@
 
 # Potholes
 
+The simulated potholes were made to mimick potholes that would be present at the Intelligent Ground Vehicles Competition 2022. The rules specified a **"Solid white circle with 2' diameter"**.
+
 ## Generating Synthetic Data
+
+Using this technique of data creation was highly efficient for two reasons. Firstly, I was able to reuse a dataset of 1.6k images that were initially used to train a U-Net model to detect lane lines. By using the same dataset for potholes, I can save time on collecting data. Secondly, the YOLOv4 model requires a label around each object in the format of <code>\<x> \<y> \<width> \<height></code>. I can easily create a label for each pothole while generating them, saving time on labelling.
+
 
 - In the <code>data</code> directory, add folders containing the input images. The script will then iterate through each of the images.
 - For each image, a random number of potholes are generated (1, MAX_POTHOLES).
@@ -15,6 +20,19 @@
 - The location of the potholes in YOLOv4 format is then appended to a .txt containing all the potholes for that image.
     - The labelled image is stored in <code>processed/data/</code>.
     - The label is stored in <code>processed/label/</code>.
+
+### Example Images
+
+Randomely generated potholes in Toronto streets.
+![Randomely Generated Potholes in Toronto](Images/Lane_Input_2773.png)
+
+Potholes with metaball noise to act as shadows.
+![Randomely Generated Potholes in Toronto with noise](Images/Lane_Input_4195.png)
+
+Potholes with fine salt-pepper noise.
+![Randomely Generated Potholes in Toronto](Images/Lane_Input_2234.png)
+
+
 
 ## Splitting the data into train/test/val
 

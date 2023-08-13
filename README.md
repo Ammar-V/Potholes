@@ -23,14 +23,14 @@ Using this technique of data creation was highly efficient for two reasons. Firs
 
 ### Example Images
 
-Randomely generated potholes in Toronto streets.
-![Randomely Generated Potholes in Toronto](Images/Lane_Input_2773.png)
+Randomely generated potholes in Toronto streets.\
+![Randomely Generated Potholes in Toronto](https://github.com/Ammar-V/Potholes/blob/main/Images/Lane_Input_2773.png?raw=true)
 
-Potholes with metaball noise to act as shadows.
-![Randomely Generated Potholes in Toronto with noise](Images/Lane_Input_4195.png)
+Potholes with metaball noise to act as shadows.\
+![Randomely Generated Potholes in Toronto with noise](https://github.com/Ammar-V/Potholes/blob/main/Images/Lane_Input_4195.png?raw=true)
 
-Potholes with fine salt-pepper noise.
-![Randomely Generated Potholes in Toronto](Images/Lane_Input_2234.png)
+Potholes with fine salt-pepper noise.\
+![Randomely Generated Potholes in Toronto](https://github.com/Ammar-V/Potholes/blob/main/Images/Lane_Input_2234.png?raw=true)
 
 
 
